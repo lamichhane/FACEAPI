@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Fetch API Demo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap.min.css" />
+        <script src="faceapi.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="container">
+        <div class="row">
+            <h1>Fetch API Demo</h1>
+        </div>
+        <div class="row">
+            <label>Enter Image URL</label><br/>
+            <input type="text" name='imgurl' value='' id='imgUrl'/> 
+        </div><br/>
+        <div class="row">
+            <button id="btn1" class="btn-primary">Analyze</button>
+         
+        </div>
+        <div class="row"  >
+            <h4>Image</h4>
+            <strong>Analyzed Photo Image</strong>
+             
+            <div class="col-md-4 "  id ="respImage" style="height: 200px;width: 200px ;border: 1px solid black"> 
+                
+            </div>
+        </div>
+        <div class="row">
+            <h4>Attributes:</h4>
+            <div id="validresult">
+                
+                Age : <span id='age'></span> <br/>
+                Gender : <span id='gender'></span>
+            </div>
+            <div id="invalidresult" style="display: none">
+              No Faces detected.
+            </div>
+        </div>
+            </div>
+    </body>
+</html>
